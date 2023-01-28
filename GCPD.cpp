@@ -22,14 +22,12 @@ bool isPrime(int n) {
 
 int greatestCommonPrimeDivisor(int a, int b) {
   int min = a, result = -1;
-  bool checkPrime;
   if (a >= b) {
     min = b;
   }
   for (int i = 2; i < min; i++) {
     if (a % i == 0 && b % i == 0) {
-      checkPrime = isPrime(i);
-      if (checkPrime == true) {
+      if (isPrime(i)) {
         result = i;
       }
     }
@@ -43,6 +41,5 @@ int main() {
   cin >> a;
   cout << "b = ";
   cin >> b;
-  int result = greatestCommonPrimeDivisor(a, b);
-  cout << result;
+  cout << greatestCommonPrimeDivisor(a, b);
 }

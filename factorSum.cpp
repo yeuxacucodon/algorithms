@@ -25,6 +25,5 @@ int main() {
   cout << "n = ";
   int n;
   cin >> n;
-  int result = factorSum(n);
-  cout << result;
+  cout << factorSum(n);
 }
