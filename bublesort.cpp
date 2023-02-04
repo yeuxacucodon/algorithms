@@ -1,5 +1,4 @@
 #include <iostream>
-#include <type_traits>
 using namespace std;
 
 void sort(int arr[], int n) {
