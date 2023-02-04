@@ -24,5 +24,4 @@ int main() {
     cout << "Position is "
          << "arr[" << result << "]";
   }
-  return 0;
 }
