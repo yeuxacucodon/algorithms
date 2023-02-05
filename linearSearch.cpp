@@ -20,8 +20,9 @@ int main() {
   int result = linearSearch(arr, n, target);
   if (result == -1) {
     cout << "Can't find " << target;
-  } else {
+  }
+  else {
     cout << "Position is "
-         << "arr[" << result << "]";
+      << "arr[" << result << "]";
   }
 }
