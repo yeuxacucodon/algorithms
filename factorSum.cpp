@@ -2,13 +2,10 @@
 #include <iostream>
 using namespace std;
 
-int solve(int n)
-{
+int solve(int n) {
   int k = 2, sum = 0;
-  while (n > 1)
-  {
-    while (n % k == 0)
-    {
+  while (n > 1) {
+    while (n % k == 0) {
       sum += k;
       n /= k;
     }
@@ -17,17 +14,14 @@ int solve(int n)
   return sum;
 }
 
-int factorSum(int n)
-{
-  while (n != solve(n))
-  {
+int factorSum(int n) {
+  while (n != solve(n)) {
     n = solve(n);
   }
   return n;
 }
 
-int main()
-{
+int main() {
   cout << "n = ";
   int n;
   cin >> n;
