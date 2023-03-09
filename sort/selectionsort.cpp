@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// n is the length of arr
 void selectionsort(int arr[], int n) {
   for (int i = 0; i < n - 1; i++) {
     int min = i;
@@ -15,7 +16,7 @@ void selectionsort(int arr[], int n) {
 
 int main() {
   int n, arr[1000];
-  cout << "n = ";
+  cout << "Length of arr = ";
   cin >> n;
   for (int i = 0; i < n; i++) {
     cout << "arr[" << i << "] = ";
